@@ -15,7 +15,7 @@ export default function MarketingLayout({
                         <div className="w-8 h-8 rounded-full border-2 border-foreground overflow-hidden bg-white flex items-center justify-center">
                             <img src="/assets/laura.png" alt="Laura Logo" className="w-full h-full object-contain p-1" />
                         </div>
-                        <span className="font-pixel text-xl font-bold">LAURA</span>
+                        <span className="font-pixel text-xl font-bold">BEESPACE</span>
                     </div>
                     <nav className="hidden md:flex items-center gap-6">
                         <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
@@ -36,9 +36,9 @@ export default function MarketingLayout({
                 <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
                     <div className="flex items-center gap-2">
                         <div className="w-6 h-6 border border-foreground bg-background"></div>
-                        <span className="font-pixel text-lg">LAURA SYSTEMS</span>
+                        <span className="font-pixel text-lg">BEESPACE SYSTEMS</span>
                     </div>
-                    <p className="text-xs text-muted-foreground">© 2025 Laura Tech. All rights reserved.</p>
+                    <p className="text-xs text-muted-foreground">© 2025 Beespace Tech. All rights reserved.</p>
                 </div>
             </footer>
         </div>

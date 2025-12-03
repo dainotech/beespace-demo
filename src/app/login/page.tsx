@@ -16,7 +16,7 @@ export default function LoginPage() {
                     <img src="/assets/laura.png" alt="Laura" className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="text-center space-y-2">
-                    <h1 className="font-pixel text-2xl font-bold">Laura OS</h1>
+                    <h1 className="font-pixel text-2xl font-bold">Beespace OS</h1>
                     <p className="text-muted-foreground text-sm">SECURE TERMINAL ACCESS</p>
                 </div>
 

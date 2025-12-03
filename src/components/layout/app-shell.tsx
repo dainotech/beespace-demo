@@ -41,7 +41,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
             <div className="min-h-screen flex items-center justify-center bg-muted/20 font-mono">
                 <div className="flex flex-col items-center gap-4">
                     <Loader2 className="w-8 h-8 animate-spin text-primary" />
-                    <p className="text-sm font-bold">INITIALIZING LAURA OS...</p>
+                    <p className="text-sm font-bold">INITIALIZING BEESPACE OS...</p>
                 </div>
             </div>
         );
@@ -57,7 +57,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
                     <div className="w-8 h-8 border-2 border-foreground bg-primary/20 p-1">
                         <img src="/assets/laura.png" alt="Laura Logo" className="w-full h-full object-contain p-1" />
                     </div>
-                    <span className="font-pixel text-xl font-bold">Laura OS</span>
+                    <span className="font-pixel text-xl font-bold">Beespace OS</span>
                 </div>
 
                 <nav className="flex-1 p-4 space-y-2">
@@ -126,7 +126,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
                                     <div className="w-8 h-8 border-2 border-foreground bg-primary/20 p-1">
                                         <img src="/assets/laura.png" alt="Laura Logo" className="w-full h-full object-contain p-1" />
                                     </div>
-                                    <span className="font-pixel text-xl font-bold">Laura OS</span>
+                                    <span className="font-pixel text-xl font-bold">Beespace OS</span>
                                 </div>
                                 <nav className="flex-1 p-4 space-y-2">
                                     <Link href="/dashboard">
@@ -175,7 +175,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
                             {pathname === "/chat" && "INTELLIGENCE // CHAT"}
                             {pathname === "/settings" && "SYSTEM // SETTINGS"}
                         </h1>
-                        <h1 className="font-pixel text-xl md:hidden">Laura OS</h1>
+                        <h1 className="font-pixel text-xl md:hidden">Beespace OS</h1>
                     </div>
 
                     <div className="flex items-center gap-4">

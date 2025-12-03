@@ -3,8 +3,8 @@ import { AuthProvider } from "@/lib/auth-context";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://daino.co.uk'),
-  title: "Laura // Retro-Industrial Intelligence",
+  metadataBase: new URL('https://bee.space'),
+  title: "Beespace // Retro-Industrial Intelligence",
   description: "Advanced telemetry and AI interface for the modern industrialist.",
 };
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=JetBrains+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -9,7 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: "JetBrains Mono", monospace;
-  --font-pixel: "Pixelify Sans", cursive;
+  --font-pixel: "Varela Round", sans-serif;
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -50,7 +50,7 @@
   --radius: 0rem;
   /* Sharp corners for Retro look */
 
-  /* Daino Palette */
+  /* Beespace Palette */
   --background: #FFFFFF;
   --foreground: #1A1A1A;
   /* Carbon Black */
@@ -61,13 +61,13 @@
   --popover: #FFFFFF;
   --popover-foreground: #1A1A1A;
 
-  --primary: #97D9B9;
-  /* Mint */
-  --primary-foreground: #1A1A1A;
+  --primary: #4169E1;
+  /* Royal Blue */
+  --primary-foreground: #FFFFFF;
 
-  --secondary: #92D1D6;
-  /* Blue */
-  --secondary-foreground: #1A1A1A;
+  --secondary: #E86100;
+  /* Spanish Orange */
+  --secondary-foreground: #FFFFFF;
 
   --muted: #F1F5F9;
   --muted-foreground: #64748B;
@@ -83,16 +83,16 @@
   --input: #1A1A1A;
   --ring: #1A1A1A;
 
-  --chart-1: #97D9B9;
-  --chart-2: #92D1D6;
+  --chart-1: #4169E1;
+  --chart-2: #E86100;
   --chart-3: #FF4D4D;
   --chart-4: #1A1A1A;
   --chart-5: #FFF700;
 
   --sidebar: #FFFFFF;
   --sidebar-foreground: #1A1A1A;
-  --sidebar-primary: #97D9B9;
-  --sidebar-primary-foreground: #1A1A1A;
+  --sidebar-primary: #4169E1;
+  --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #F1F5F9;
   --sidebar-accent-foreground: #1A1A1A;
   --sidebar-border: #1A1A1A;
@@ -106,10 +106,10 @@
   --card-foreground: #FFFFFF;
   --popover: #1A1A1A;
   --popover-foreground: #FFFFFF;
-  --primary: #97D9B9;
-  --primary-foreground: #1A1A1A;
-  --secondary: #92D1D6;
-  --secondary-foreground: #1A1A1A;
+  --primary: #4169E1;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E86100;
+  --secondary-foreground: #FFFFFF;
   --muted: #2A2A2A;
   --muted-foreground: #A1A1AA;
   --accent: #2A2A2A;
@@ -121,8 +121,8 @@
   --ring: #FFFFFF;
   --sidebar: #1A1A1A;
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #97D9B9;
-  --sidebar-primary-foreground: #1A1A1A;
+  --sidebar-primary: #4169E1;
+  --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #2A2A2A;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #FFFFFF;
@@ -146,6 +146,6 @@
   }
 
   .font-pixel {
-    font-family: "Pixelify Sans", cursive;
+    font-family: "Varela Round", sans-serif;
   }
 }

@@ -23,7 +23,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl font-mono border-l-4 border-primary pl-4 text-left md:text-center md:border-l-0 md:pl-0">
-            Stop guessing. Start knowing. Laura combines retro-industrial reliability with next-gen AI to visualize your building's invisible data.
+            Stop guessing. Start knowing. Beespace combines retro-industrial reliability with next-gen AI to visualize your building's invisible data.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 min-w-[300px]">
