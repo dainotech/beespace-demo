@@ -10,7 +10,7 @@ export default function DesignPage() {
     return (
         <div className="min-h-screen bg-background p-8 space-y-12 font-mono">
             <header className="space-y-4">
-                <h1 className="text-4xl font-pixel text-primary">DAINO DESIGN SYSTEM v1.0</h1>
+                <h1 className="text-4xl font-pixel text-primary">LAURA DESIGN SYSTEM v1.0</h1>
                 <p className="text-muted-foreground">Kitchen Sink for the Retro-Industrial Identity.</p>
             </header>
 

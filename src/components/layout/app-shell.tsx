@@ -41,7 +41,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
             <div className="min-h-screen flex items-center justify-center bg-muted/20 font-mono">
                 <div className="flex flex-col items-center gap-4">
                     <Loader2 className="w-8 h-8 animate-spin text-primary" />
-                    <p className="text-sm font-bold">INITIALIZING DAINO OS...</p>
+                    <p className="text-sm font-bold">INITIALIZING LAURA OS...</p>
                 </div>
             </div>
         );
@@ -50,14 +50,14 @@ function AppContent({ children }: { children: React.ReactNode }) {
     if (!user) return null; // Will redirect via useEffect
 
     return (
-        <div className="flex min-h-screen bg-muted/20 font-mono">
-            {/* Fixed Sidebar */}
-            <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r-2 border-foreground bg-background hidden md:flex flex-col">
-                <div className="flex h-16 items-center border-b-2 border-foreground px-6 gap-2">
-                    <div className="w-8 h-8 rounded-full border-2 border-foreground overflow-hidden bg-white flex items-center justify-center">
-                        <img src="/assets/Daino-1.png" alt="Daino Logo" className="w-full h-full object-contain p-1" />
+        <div className="flex h-screen bg-background font-mono overflow-hidden">
+            {/* Sidebar (Desktop) */}
+            <aside className="hidden md:flex w-64 flex-col border-r-2 border-foreground bg-muted/10">
+                <div className="h-16 border-b-2 border-foreground flex items-center px-4 gap-3 bg-background">
+                    <div className="w-8 h-8 border-2 border-foreground bg-primary/20 p-1">
+                        <img src="/assets/laura.png" alt="Laura Logo" className="w-full h-full object-contain p-1" />
                     </div>
-                    <span className="font-pixel text-xl font-bold">DAINO OS</span>
+                    <span className="font-pixel text-xl font-bold">Laura OS</span>
                 </div>
 
                 <nav className="flex-1 p-4 space-y-2">
@@ -123,10 +123,10 @@ function AppContent({ children }: { children: React.ReactNode }) {
                             </SheetTrigger>
                             <SheetContent side="left" className="w-64 p-0 border-r-2 border-foreground bg-background font-mono">
                                 <div className="flex h-16 items-center border-b-2 border-foreground px-6 gap-2">
-                                    <div className="w-8 h-8 rounded-full border-2 border-foreground overflow-hidden bg-white flex items-center justify-center">
-                                        <img src="/assets/Daino-1.png" alt="Daino Logo" className="w-full h-full object-contain p-1" />
+                                    <div className="w-8 h-8 border-2 border-foreground bg-primary/20 p-1">
+                                        <img src="/assets/laura.png" alt="Laura Logo" className="w-full h-full object-contain p-1" />
                                     </div>
-                                    <span className="font-pixel text-xl font-bold">DAINO OS</span>
+                                    <span className="font-pixel text-xl font-bold">Laura OS</span>
                                 </div>
                                 <nav className="flex-1 p-4 space-y-2">
                                     <Link href="/dashboard">
@@ -175,7 +175,7 @@ function AppContent({ children }: { children: React.ReactNode }) {
                             {pathname === "/chat" && "INTELLIGENCE // CHAT"}
                             {pathname === "/settings" && "SYSTEM // SETTINGS"}
                         </h1>
-                        <h1 className="font-pixel text-xl md:hidden">DAINO OS</h1>
+                        <h1 className="font-pixel text-xl md:hidden">Laura OS</h1>
                     </div>
 
                     <div className="flex items-center gap-4">
@@ -207,11 +207,11 @@ function AppContent({ children }: { children: React.ReactNode }) {
                             <DropdownMenuTrigger asChild>
                                 <Button type="button" variant="ghost" className="relative h-10 w-10 rounded-full p-0 border-2 border-foreground overflow-hidden hover:opacity-80 transition-opacity">
                                     <img
-                                        src={user.photoURL || "/assets/Daino-1.png"}
-                                        alt="User"
-                                        className="w-full h-full object-cover bg-primary"
+                                        src={user.photoURL || "/assets/laura.png"}
+                                        alt={user.displayName || "User"}
+                                        className="w-full h-full object-cover"
                                         onError={(e) => {
-                                            (e.target as HTMLImageElement).src = "/assets/Daino-1.png";
+                                            (e.target as HTMLImageElement).src = "/assets/laura.png";
                                         }}
                                     />
                                 </Button>

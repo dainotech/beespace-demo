@@ -13,11 +13,10 @@ export default function LoginPage() {
         <div className="min-h-screen flex items-center justify-center bg-muted/20 p-4 font-mono">
             <Card className="w-full max-w-md p-8 retro-border bg-background flex flex-col items-center gap-6">
                 <div className="w-16 h-16 rounded-full border-2 border-foreground bg-white flex items-center justify-center overflow-hidden">
-                    <img src="/assets/Daino-1.png" alt="DAINO" className="w-full h-full object-contain p-2" />
+                    <img src="/assets/laura.png" alt="Laura" className="w-full h-full object-contain p-2" />
                 </div>
-
                 <div className="text-center space-y-2">
-                    <h1 className="font-pixel text-2xl font-bold">DAINO OS</h1>
+                    <h1 className="font-pixel text-2xl font-bold">Laura OS</h1>
                     <p className="text-muted-foreground text-sm">SECURE TERMINAL ACCESS</p>
                 </div>
 

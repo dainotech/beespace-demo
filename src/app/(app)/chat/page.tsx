@@ -17,7 +17,7 @@ import { useSite } from "@/lib/site-context";
 export default function ChatPage() {
     const { selectedSite } = useSite();
     const [messages, setMessages] = useState<Message[]>([
-        { role: "model", content: "DAINO System Online. Telemetry link established. Awaiting query." }
+        { role: "model", content: "Laura System Online. Telemetry link established. Awaiting query." }
     ]);
     const [input, setInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -79,7 +79,7 @@ export default function ChatPage() {
                                 "w-8 h-8 rounded-none border-2 border-foreground flex items-center justify-center shrink-0",
                                 m.role === "user" ? "bg-primary" : "bg-secondary"
                             )}>
-                                {m.role === "user" ? <User className="w-5 h-5" /> : <img src="/assets/Daino-1.png" className="w-6 h-6 object-contain" />}
+                                {m.role === "user" ? <User className="w-5 h-5" /> : <img src="/assets/laura.png" className="w-6 h-6 object-contain" />}
                             </div>
 
                             <div className={cn(
@@ -93,7 +93,7 @@ export default function ChatPage() {
                     {isLoading && (
                         <div className="flex gap-3 mr-auto">
                             <div className="w-8 h-8 rounded-none border-2 border-foreground bg-secondary flex items-center justify-center shrink-0 animate-pulse">
-                                <img src="/assets/Daino-1.png" className="w-6 h-6 object-contain" />
+                                <img src="/assets/laura.png" className="w-6 h-6 object-contain" />
                             </div>
                             <div className="p-3 border-2 border-foreground bg-secondary/20 text-sm font-mono">
                                 Processing...

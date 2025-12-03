@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://daino.co.uk'),
-  title: "DAINO // Retro-Industrial Intelligence",
+  title: "Laura // Retro-Industrial Intelligence",
   description: "Advanced telemetry and AI interface for the modern industrialist.",
 };
 

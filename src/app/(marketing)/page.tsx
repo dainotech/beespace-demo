@@ -23,7 +23,7 @@ export default function LandingPage() {
           </h1>
 
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl font-mono border-l-4 border-primary pl-4 text-left md:text-center md:border-l-0 md:pl-0">
-            Stop guessing. Start knowing. Daino combines retro-industrial reliability with next-gen AI to visualize your building's invisible data.
+            Stop guessing. Start knowing. Laura combines retro-industrial reliability with next-gen AI to visualize your building's invisible data.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 min-w-[300px]">
@@ -60,7 +60,7 @@ export default function LandingPage() {
               </div>
               <h3 className="text-2xl font-pixel font-bold">AI Intelligence</h3>
               <p className="text-muted-foreground font-mono text-sm">
-                Ask questions in plain English. "Why is the heating on?" Daino knows.
+                Ask questions in plain English. "Why is the heating on?" Laura knows.
               </p>
             </div>
             <div className="flex flex-col space-y-4 p-6 bg-background border-2 border-foreground shadow-[4px_4px_0px_0px_#1A1A1A]">

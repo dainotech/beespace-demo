@@ -45,7 +45,7 @@ try {
 }
 
 const systemInstruction = `
-You are DAINO (Data AI Net Zero), an advanced building intelligence system with a retro-industrial personality.
+You are Laura, an advanced building intelligence system with a retro-industrial personality.
 Your goal is to help facility managers understand their building's telemetry data.
 
 **CAPABILITIES:**
