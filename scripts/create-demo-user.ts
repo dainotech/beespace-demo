@@ -15,16 +15,16 @@ const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 if (getApps().length === 0) {
     initializeApp({
         credential: cert(serviceAccount),
-        projectId: 'daino-platform'
+        projectId: 'beespace-demo-app'
     });
 }
 
 const auth = getAuth();
 
 async function createDemoUser() {
-    const email = 'demo@daino.co.uk';
+    const email = 'demo@bee.space';
     const password = 'password';
-    const displayName = 'Daino Demo';
+    const displayName = 'Beespace Demo';
 
     try {
         // Check if user exists

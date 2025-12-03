@@ -82,7 +82,7 @@ export default function LoginPage() {
 
                     <div className="p-3 bg-muted border-2 border-foreground/20 text-xs font-mono">
                         <p className="font-bold mb-1">DEMO CREDENTIALS:</p>
-                        <p>ID: demo@daino.co.uk</p>
+                        <p>ID: demo@bee.space</p>
                         <p>CODE: password</p>
                     </div>
 
