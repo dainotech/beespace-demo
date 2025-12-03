@@ -5,21 +5,40 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // Initialize BigQuery
-const serviceAccountPath = path.join(process.cwd(), 'service-account.json');
+// Initialize BigQuery
 let bigquery: BigQuery | null = null;
 
 try {
-    if (fs.existsSync(serviceAccountPath)) {
-        const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
+    let credentials;
+    const projectId = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'beespace-demo-app';
+
+    // 1. Try Environment Variable (Vercel / Production)
+    if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+        try {
+            credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+        } catch (e) {
+            console.error("Failed to parse GOOGLE_SERVICE_ACCOUNT_JSON", e);
+        }
+    }
+
+    // 2. Try Local File (Development)
+    if (!credentials) {
+        const serviceAccountPath = path.join(process.cwd(), 'service-account.json');
+        if (fs.existsSync(serviceAccountPath)) {
+            credentials = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
+        }
+    }
+
+    if (credentials) {
         bigquery = new BigQuery({
-            projectId: 'daino-platform',
+            projectId: projectId,
             credentials: {
-                client_email: serviceAccount.client_email,
-                private_key: serviceAccount.private_key,
+                client_email: credentials.client_email,
+                private_key: credentials.private_key,
             },
         });
     } else {
-        console.warn("⚠️ service-account.json not found. BigQuery tool will fail.");
+        console.warn("⚠️ Google Credentials not found. BigQuery tool will fail.");
     }
 } catch (e) {
     console.error("Error initializing BigQuery:", e);
